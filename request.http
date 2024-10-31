@@ -1,0 +1,142 @@
+
+# ###
+# POST http://localhost:3008/institutes HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "Nit": "6543",
+#   "Name": "sofia m",
+#   "Location": "calle 67 # 26a 20",
+#   "Contact": "sofia marin castro",
+#   "ContactEmail": "sofia@email.com",
+#   "ContactPhoneNumber": 23456345
+# }
+
+# ###
+# GET http://localhost:10000/institutes HTTP/1.1
+
+# ###
+# PUT http://localhost:3007/institutes/663514ef8bb6bedc751d1cf0 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "Nit": "11111",
+#   "Name": "cristian kkkk",
+#   "Location": "calle 67 # 26a 20",
+#   "Contact": "cristian rendon castro",
+#   "ContactEmail": "cristian@email.com",
+#   "ContactPhoneNumber": 23456345
+# }
+
+# ###
+# DELETE http://localhost:3007/institutes/6635123978ce656e3213133c HTTP/1.1
+
+#_________________________________________________________________________________________________________-
+# ###
+# POST http://localhost:3008/responsabilities HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "Description": "organizo papeles y sillas",
+#   "Location": "sede 2",
+#   "Duration": "2 hora",
+#   "State":1
+# }
+
+
+# ###
+# GET http://localhost:10000/responsabilities HTTP/1.1
+
+# ###
+# GET http://localhost:10000/responsabilities/663542d36892a1e111fc6915 HTTP/1.1
+
+
+
+# ###
+# PUT http://localhost:10000/responsabilities/663542d36892a1e111fc6915 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "Description": "organizo documentos y sillas",
+#   "Location": "sede 1",
+#   "Duration": "4 hora",
+#   "State":0
+# }
+
+
+# ###
+# DELETE http://localhost:10000/responsabilities/663542d36892a1e111fc6915 HTTP/1.1
+
+# _________________________________________________________________________________________________________-
+# ###
+# POST http://localhost:10000/trainees HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "FirstName": "leo",
+#   "LastName": "Herrera",
+#   "DocumentType": "cc",
+#   "DocumentNumber": 1038866112,
+#   "PhoneNumber": 3013513143,
+#   "InstituteID": "663514ef8bb6bedc751d1cf0"
+# }
+# # ###
+# # GET http://localhost:10000/trainees HTTP/1.1
+
+# ###
+# GET http://localhost:3007/trainees/66364f5de845a4dd4c7275db HTTP/1.1
+# ###
+# PUT http://localhost:3007/trainees/66364f5de845a4dd4c7275db HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "FirstName": "esteban",
+#   "LastName": "salazar m",
+#   "DocumentType": "cc",
+#   "DocumentNumber": 1456789,
+#   "PhoneNumber": 308475888,
+#   "InstituteID": "663514ef8bb6bedc751d1cf0"
+# }
+
+# ###
+# DELETE http://localhost:3007/trainees/66364ff3e845a4dd4c7275df HTTP/1.1
+
+# _________________________________________________________________________________________________________
+
+# ###
+# POST http://localhost:10000/responsabilitiestrainees HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "StartDate": "12:01",
+#   "FinishDate": "1:00",
+#   "Observations": "no se que poner aqui",
+#   "TraineeID": "6636544b806edadb01c8b112",
+#   "ResponsabilitieID": "663543056892a1e111fc6919"
+# }
+
+
+# ###
+# GET http://localhost:10000/responsabilitiestrainees HTTP/1.1
+
+
+# ###
+# GET http://localhost:3007/responsabilitiestrainees/66365c36d9ca362b72b82e53 HTTP/1.1
+
+
+# ###
+# PUT http://localhost:3007/responsabilitiestrainees/66365c36d9ca362b72b82e53 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#   "StartDate": "2:00",
+#   "FinishDate": "3:02",
+#   "Observations": "no se que poner aqui ",
+#   "TraineeID": "6636544b806edadb01c8b112",
+#   "ResponsabilitieID": "663543056892a1e111fc6919"
+# }
+
+
+
+# ###
+# DELETE http://localhost:3007/responsabilitiestrainees/66365d6f0724fa026cf1c7bf HTTP/1.1
